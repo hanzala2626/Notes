@@ -1,0 +1,163 @@
+/* #addbtn{
+    display: flex;
+    float: right;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    height: 20%;
+    }
+
+    #addbtn i{
+        cursor: pointer;
+        position: fixed;
+
+    }
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+ flex-wrap: wrap;
+}
+
+.note{
+    background:linear-gradient(rgb(196, 89, 70),white);
+    height: 340px;
+    width: 300px;
+    margin-left: 20px;
+     margin-top:47px;
+    
+}
+
+.tool{
+  
+    width:94%;
+    background-color: black;
+    color: aliceblue;
+    padding: 15px;
+   display: flex;
+   justify-content: flex-end;
+   
+}
+
+.tool i{
+    padding: 3px;
+    cursor: pointer;
+}
+.note textarea{
+    background:linear-gradient(rgb(196, 89, 70),white);
+     border: none;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 5px;
+   font-size: 16px;
+}
+ */
+
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    display: flex;
+    
+    justify-content: center;
+   color: rgba(199, 71, 20, 0.774);
+}
+
+body{
+    background: linear-gradient(to right, rgb(113, 179, 113) , white);
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#addBtn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: #2d3436;
+    color: rgb(189, 151, 151);
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.note {
+    width: 340px;
+    height: 350px;
+    background-color: rgb(179, 100, 100);
+    margin: 15px;
+    margin-top: 55px;
+    border-top-right-radius:12px ;
+}
+
+.tool {
+    width: 100%;
+    background-color: #2d3436;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    border-top-right-radius:12px ;
+}
+.tool i {
+    padding: 7px;
+    cursor: pointer;
+}
+.save{
+    font-size: 25px;
+}
+.trash{
+    font-size: 25px;
+}
+
+.note textarea {
+    background-color: rgb(159, 117, 202);
+    border: none;
+    width: 94%;
+    height: 91%;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom-right-radius:12px ;
+    border-bottom-left-radius:12px ;
+}
+
+.note textarea:focus {
+    border: 0;
+    outline: 0;
+}
+/* //delete ::-webkit-validation-bubble-message */
+
+.delteMessage{
+    display: none;
+    background-color: tomato;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid rebeccapurple;
+    border-radius: 7px;
+    width: 200px;
+    height: 200px;
+}
+.deleteButton{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    
+}
